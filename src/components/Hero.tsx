@@ -26,13 +26,13 @@ export default function Hero() {
 
         {/* Title */}
         <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold text-gray-200 mb-8 animate-slide-up" style={{ animationDelay: "0.2s" }}>
-          Full Stack Developer
+          Automation & AI Specialist
         </h2>
 
         {/* Description */}
         <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-12 animate-slide-up" style={{ animationDelay: "0.3s" }}>
-          Part tech builder, part creative mind. I specialize in automation, AI integrations,
-          and building modern web experiences that solve real problems.
+          I build AI-powered automations that work 24/7. From voice agents to content pipelines,
+          I help businesses scale with n8n workflows, Retell AI, Twilio, and custom AI solutions.
         </p>
 
         {/* CTA Buttons */}

@@ -1,10 +1,17 @@
 "use client";
 
 const stats = [
-  { number: "1+", label: "Year Experience" },
-  { number: "10+", label: "Projects Completed" },
-  { number: "5+", label: "Happy Clients" },
-  { number: "8+", label: "Technologies" },
+  { number: "50+", label: "Automations Built" },
+  { number: "500+", label: "Nodes Configured" },
+  { number: "20+", label: "Happy Clients" },
+  { number: "15+", label: "Technologies" },
+];
+
+const highlights = [
+  "Scaled business operations from Rs 8L to Rs 40L monthly",
+  "Built 50+ production-ready n8n workflows",
+  "Built AI voice agents with Retell AI",
+  "Automation Engineer at Prodigy Flow AI",
 ];
 
 export default function About() {
@@ -24,9 +31,10 @@ export default function About() {
               <div className="aspect-square rounded-2xl bg-gradient-to-br from-[#ff6b35]/20 to-[#7c3aed]/20 flex items-center justify-center">
                 <div className="text-center">
                   <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-r from-[#ff6b35] to-[#7c3aed] flex items-center justify-center text-6xl font-bold">
-                    A
+                    MA
                   </div>
-                  <p className="mt-6 text-gray-400">Your photo here</p>
+                  <p className="mt-6 text-xl font-semibold text-white">Mohammad Ayaan</p>
+                  <p className="text-gray-400">Automation Engineer</p>
                 </div>
               </div>
             </div>
@@ -38,31 +46,42 @@ export default function About() {
           {/* Content Side */}
           <div>
             <h3 className="text-2xl md:text-3xl font-semibold mb-6">
-              A passionate developer based in{" "}
-              <span className="gradient-text">Durg, Chhattisgarh</span>
+              AI Automation Engineer at{" "}
+              <span className="gradient-text">Prodigy Flow AI</span>
             </h3>
 
             <p className="text-gray-400 text-lg mb-6 leading-relaxed">
-              I&apos;m Mohammad Ayaan Ansari - a full-stack developer and automation specialist.
-              I love building smart solutions using n8n, AI tools, and modern web technologies.
-              Fresh out of college and already working on exciting freelance projects!
+              I&apos;m Mohammad Ayaan Ansari - part tech builder, part creative mind. I work at
+              the intersection of automation, content, and problem-solving. Whether it&apos;s
+              setting up advanced workflows with n8n, GoHighLevel, or Twilio, I care
+              about making things that work - fast, clean, and with real impact.
             </p>
 
             <p className="text-gray-400 text-lg mb-8 leading-relaxed">
-              My expertise spans workflow automation, AI voice agents with Retell AI,
-              communication systems with Twilio, and marketing automation with GoHighLevel.
-              I turn complex ideas into seamless digital experiences.
+              I&apos;m not someone who waits to be told what to do. I plan, build, and iterate.
+              I ask hard questions. And I love learning - not just for the sake of it, but
+              because better understanding leads to better execution.
             </p>
 
+            {/* Highlights */}
+            <div className="mb-8 space-y-3">
+              {highlights.map((highlight, index) => (
+                <div key={index} className="flex items-center gap-3">
+                  <div className="w-2 h-2 rounded-full bg-[#ff6b35]" />
+                  <span className="text-gray-300">{highlight}</span>
+                </div>
+              ))}
+            </div>
+
             {/* Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {stats.map((stat, index) => (
                 <div
                   key={index}
                   className="glass rounded-2xl p-4 text-center hover-card"
                 >
-                  <p className="text-3xl font-bold gradient-text">{stat.number}</p>
-                  <p className="text-gray-400 text-sm mt-1">{stat.label}</p>
+                  <p className="text-2xl md:text-3xl font-bold gradient-text">{stat.number}</p>
+                  <p className="text-gray-400 text-xs mt-1">{stat.label}</p>
                 </div>
               ))}
             </div>

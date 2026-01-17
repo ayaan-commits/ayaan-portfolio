@@ -9,11 +9,11 @@ const skillCategories = [
       </svg>
     ),
     skills: [
-      { name: "n8n", level: 90 },
-      { name: "Retell AI", level: 85 },
-      { name: "Twilio", level: 82 },
+      { name: "n8n", level: 95 },
+      { name: "OpenAI / GPT-4", level: 90 },
+      { name: "Retell AI / ElevenLabs", level: 88 },
       { name: "GoHighLevel", level: 88 },
-      { name: "Make/Zapier", level: 80 },
+      { name: "Twilio / WhatsApp", level: 85 },
     ],
   },
   {
