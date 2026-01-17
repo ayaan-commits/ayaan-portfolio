@@ -57,9 +57,9 @@ const automations: BentoItem[] = [
   {
     id: "ai-call",
     title: "AI Call Webhook",
-    description: "Voice AI agent powered by VAPI that handles inbound/outbound calls, qualifies leads with natural conversation, books appointments, and syncs with CRM in real-time.",
+    description: "Voice AI agent powered by Retell AI that handles inbound/outbound calls, qualifies leads with natural conversation, books appointments, and syncs with CRM in real-time.",
     category: "ai-calling",
-    technologies: ["n8n", "VAPI", "OpenAI", "Twilio", "GoHighLevel", "Google Calendar"],
+    technologies: ["n8n", "Retell AI", "OpenAI", "Twilio", "GoHighLevel", "Google Calendar"],
     gradient: "bg-gradient-to-br from-[#10b981]/20 to-[#34d399]/20",
     icon: <Phone className="w-5 h-5" />,
     metrics: "51 Nodes",
@@ -83,6 +83,17 @@ const automations: BentoItem[] = [
 ];
 
 const websites: BentoItem[] = [
+  {
+    id: "igniteict",
+    title: "Ignite ICT",
+    description: "K-12 ICT curriculum website with dual learning pathways (Digiverse & Codiverse) for 21st century digital literacy education.",
+    category: "website",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    gradient: "bg-gradient-to-br from-[#f97316]/20 to-[#fb923c]/20",
+    icon: <Globe className="w-5 h-5" />,
+    href: "https://igniteict-website.vercel.app",
+    github: "https://github.com/ayaan-commits/igniteict-website",
+  },
   {
     id: "transcript-scraper",
     title: "Video Transcriber",
